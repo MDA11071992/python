@@ -1,12 +1,11 @@
-fib = int(input("enter number: "))
+fib = int(input())
 a = 0
 b = 1
-x = 1
-for i in range(fib * 1000):
+x = int()
+while a < fib:
     a, b = b, a + b
     x += 1
-    if fib == a:
+    if a == fib:
         print(x)
-        break
-else:
-    print("Don't FIB")
+    elif a > fib:
+        print("Don't FIB")

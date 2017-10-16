@@ -13,16 +13,16 @@ class Terran():
     def shoot(self, enemy):
         if self.health != 0:
             """Атакуем врага"""
-            print("У зерга", enemy.health, "HP.")
             enemy.health -= self.damage
+            print("У зерга", enemy.health, "HP.")
             if enemy.health == 0:
                 enemy.death()
 
 
 class Zerg():
     """Создаём Зерга"""
-    health = 10
-    damage = 2
+    health = 8
+    damage = 3
 
     def __init__(self):
         """Объект произносит боевой клич при появлении"""
@@ -35,8 +35,8 @@ class Zerg():
     def bite(self, enemy):
         if self.health != 0:
             """Атакуем врага"""
-            print("У человека", enemy.health, "HP.")
             enemy.health -= self.damage
+            print("У человека", enemy.health, "HP.")
             if enemy.health == 0:
                 enemy.death()
 

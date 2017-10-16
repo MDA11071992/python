@@ -1,7 +1,10 @@
 n = int(input())
-s = 0
-for i in range(n):
-    x = int(input())
-    if x == 0:
-        s += 1
-print(s)
+a = 0
+b = 1
+while n != 0:
+    if n > a:
+        a, c = n, a
+    if a == c == n:
+        b += 1
+    n = int(input())
+print(b)    
