@@ -1,15 +1,13 @@
 import math
 
-x = 1
-mas = []
-s = int()
-n = int()
+x = int(input())
+n, sum, square_sum = 0, 0, 0
 while x != 0:
-    x = int(input())
-    mas.add = x
-    s += x
+    sum += x
     n += 1
-s = s / n
-for i in range(n):
-
-a = math.sqrt()
+    square_sum += x * x
+    x = int(input())
+else:
+    sum /= n
+    sigma = math.sqrt((square_sum - sum * sum * n) / (n - 1))
+print(sigma)
